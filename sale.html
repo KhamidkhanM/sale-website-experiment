@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>inBazar - sale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="sale-css/sale-header.css">
+    <link rel="stylesheet" href="sale-css/sale-body.css">
+    <link rel="stylesheet" href="sale-css/sale-sidebar.css">
+    <link rel="stylesheet" href="sale-css/savat.css">
+
+    <style>
+
+    </style>
+
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="site-logo">
+            <img src="sale-logo/inbazar_new.jpg" alt="site logo" class="logo-icon">
+
+        </div>
+
+        <div class="sort-bar">
+            <span class="sort-text">Phones </span>
+            <span class="sort-text"> Laptops</span>
+            <span class="sort-text">Airpods </span>
+            <span class="sort-text">Accessories </span>
+
+        </div>
+
+        <div class="search-bar">
+
+            <input class="search-text" placeholder="Search for items..."></input>
+
+            <button class="search-button">
+                <img src="sale-icons/search.svg" alt="search icon" class="search-icon">
+            </button>
+        </div>
+
+
+
+        <div class="right-section">
+            <img src="sale-icons/shopping-cart-512.png" class="cart-icon">
+            <img class="favorites-main" src="favorites-icon.svg" alt="Your Favorites">
+            <img src="sale-icons/channels4_profile.jpg" class="profile-pic">
+        </div>
+
+    </div>
+
+
+
+    <div class="body">
+        <h1 class="iphones">
+            INBAZAR
+        </h1>
+
+        <h2 class="iphones2">
+            iPhones
+        </h2>
+        <div class="phone-names">
+            <span class="sort"> iPhone (13) </span>
+            <span class="sort"> Samsung (24)</span>
+            <span class="sort"> Xiaomi (18)</span>
+            <span class="sort"> Huawei (12)</span>
+            <span class="sort"> Infinix (9)</span>
+        </div>
+
+
+        <div class="product-list">
+            <div class="phone-info">
+
+                <img src="sale-pictures/phone-1.webp" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone 17 8/256GB White</span>
+                <span class="phone-review">&#11088; No reviews </span>
+                <span class="phone-price"> $899 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+
+            </div>
+
+            <div class="phone-info">
+                <img src="sale-pictures/phone-2.webp" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone 16e 128GB White</span>
+                <span class="phone-review">&#11088; No reviews </span>
+                <span class="phone-price"> $899 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+            </div>
+
+            <div class="phone-info">
+                <img src="sale-pictures/phone-3.webp" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone 16 Pro 128GB Black Titanium</span>
+                <span class="phone-review"> &#11088; No reviews </span>
+                <span class="phone-price"> $1099 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+            </div>
+
+            <div class="phone-info">
+                <img src="sale-pictures/phone-4.png" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone 17 8/256GB Black</span>
+                <span class="phone-review">&#11088; No reviews </span>
+                <span class="phone-price"> $899 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+            </div>
+
+            <div class="phone-info">
+                <img src="sale-pictures/phone-5.webp" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone 17 8/256GB Sage</span>
+                <span class="phone-review">&#11088; No reviews </span>
+                <span class="phone-price"> $899 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+            </div>
+
+            <div class="phone-info">
+                <img src="sale-pictures/phone-6.webp" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone 17 Pro Max 12/256GB Silver</span>
+                <span class="phone-review"> &#11088; No reviews </span>
+                <span class="phone-price"> $1299 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+            </div>
+
+
+            <div class="phone-info">
+                <img src="sale-pictures/phone-8.webp" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone 17 Pro 12/256GB Cosmic Orange</span>
+                <span class="phone-review"> &#11088; No reviews </span>
+                <span class="phone-price"> $1299 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+            </div>
+
+
+            <div class="phone-info">
+                <img src="sale-pictures/phone-9.webp" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone 17 Pro Max 12/256GB Cosmic Orange</span>
+                <span class="phone-review"> &#11088; No reviews </span>
+                <span class="phone-price"> $1299 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+            </div>
+
+            <div class="phone-info">
+                <img src="sale-pictures/phone-10.webp" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone 17 Pro 12/256GB Deep Blue</span>
+                <span class="phone-review"> &#11088; No reviews </span>
+                <span class="phone-price"> $1199 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+            </div>
+
+            <div class="phone-info">
+                <img src="sale-pictures/phone-11.webp" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone Air 12/256GB Light Gold</span>
+                <span class="phone-review"> &#11088; No reviews </span>
+                <span class="phone-price"> $999 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+            </div>
+
+            <div class="phone-info">
+                <img src="sale-pictures/phone-12.webp" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone 17 Pro Max 12/256GB Deep Blue</span>
+                <span class="phone-review"> &#11088; No reviews </span>
+                <span class="phone-price"> $1299 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+            </div>
+
+
+            <div class="phone-info">
+                <img src="sale-pictures/phone-13.webp" class="product-pic">
+                <button class="favorites-button" onclick="addToFavorites('iPhone 15 Pro')">
+                    <img src="favorites-icon.svg" alt="Add to Favorites">
+                </button>
+                <span class="phone-name"> Apple iPhone 17 8/256GB Mist Blue</span>
+                <span class="phone-review"> &#11088; No reviews </span>
+                <span class="phone-price"> $899 </span>
+                <button class="cart-icon-button" onclick="addToCart('iPhone 15 Pro', 899)">
+                    <img src="sale-icons/shopping-cart-512.png" alt="Add to Cart">
+                </button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-space">
+        <div class="down-container">
+
+            <div class="footer-contact">
+                <span class="question"> Do you have questions? Call us</span>
+                <span class="phone-number"> +82 010 4354 4777 </span>
+                <div class="footer-icons">
+                    <img class="down-icon" src="sale-icons/facebook.png" alt="Facebook Icon">
+                    <img class="down-icon" src="sale-icons/instagram.png" alt="instagram Icon">
+                    <img class="down-icon" src="sale-icons/telegram.png" alt="Telegram Icon">
+                    <img class="down-icon" src="sale-icons/youtube-black.png" alt="Youtube Icon">
+                    <img class="down-icon" src="sale-icons/email.png" alt="Email Icon">
+                </div>
+            </div>
+
+            <div class="second-line">
+                <span class="company"> Company</span>
+                <span class="company"> About Us</span>
+                <span class="company"> Careers</span>
+                <span class="company"> Store Locations</span>
+                <span class="company"> Blog</span>
+                <span class="company"> Imei check</span>
+            </div>
+
+            <div class="third-line">
+                <span class="third-line-text"> Support</span>
+                <span class="third-line-text"> Contact Us</span>
+                <span class="third-line-text"> Returns & Refunds</span>
+                <span class="third-line-text"> Online Stores</span>
+                <span class="third-line-text"> Terms & Conditions</span>
+                <span class="third-line-text"> Privacy Policy</span>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <data class="savat">
+
+    </data>
+
+</body>
+
+
+
+</html>

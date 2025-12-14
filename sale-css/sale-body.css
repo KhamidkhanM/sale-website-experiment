@@ -1,0 +1,282 @@
+.body {
+    font-family: noto-sans, sans-serif;
+    background-color: white;
+    border: 20px solid rgb(4, 184, 4);
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.iphones {
+    display: block;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.iphones2 {
+    display: block;
+    text-align: center;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 400px;
+    gap: 25px;
+    padding: 30px;
+    width: 85%;
+}
+
+
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.product-list>div:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(2, 152, 2, 0.3);
+    border-radius: 8px;
+
+}
+
+.product-list>div {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: start;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 12px;
+    transform: translateY(-5px);
+
+
+}
+
+
+
+.product-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+
+
+.phone-name {
+    display: block;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+
+
+.phone-review {
+    display: block;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin-top: 10px;
+}
+
+
+
+
+.phone-price {
+    display: block;
+    font-size: 16px;
+    color: rgb(2, 152, 2);
+    margin-top: 18px;
+}
+
+.cart-icon-button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.cart-icon-button:hover {
+    background: rgba(4, 184, 4, 0.1);
+    transform: scale(1.1);
+}
+
+.cart-icon-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.favorites-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.favorites-button:hover {
+    background: rgba(4, 184, 4, 0.1);
+    transform: scale(1.1);
+}
+
+.favorites-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+.footer-space {
+    background-color: #2e2d2d;
+    padding: 60px 50px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.down-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.down-icon {
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: white;
+    border-radius: 50%;
+    border: black 2px solid;
+    margin-right: 10px;
+}
+
+.down-icon:hover {
+    transform: scale(1.1);
+}
+
+.phone-number {
+    color: white;
+    font-size: 30px;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 300px;
+}
+
+.second-line {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    flex: 1;
+    min-width: 200px;
+}
+
+.company:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.third-line {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    flex: 1;
+    min-width: 200px;
+}
+
+.third-line-text:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.company,
+.third-line-text {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.company:hover,
+.third-line-text:hover {
+    color: rgb(4, 184, 4);
+}
+
+@media (max-width: 900px) {
+    .down-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-contact,
+    .second-line,
+    .third-line {
+        width: 100%;
+    }
+
+    .second-line,
+    .third-line {
+        padding-left: 0;
+        top: 0;
+    }
+}
